@@ -1,0 +1,27 @@
+.header-nav{
+    height: 80px;
+    background-color: #1C2B35;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+.header-nav h2{
+    color: white;
+    margin-left: 40px;
+    text-transform: uppercase;
+}
+
+.header-menu{
+    margin-right: 80px;
+}
+.header-menu a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    transition: .5s linear;
+}
+.header-menu a:hover{
+    color: orange;
+    transform: scale(1.1);
+}
