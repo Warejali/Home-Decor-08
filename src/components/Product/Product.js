@@ -12,20 +12,19 @@ const Product = (props) => {
         //     </div>
         //         <button onClick={()=>props.addToCart(props.product)} className='btn-add-cart'>Add To cart</button>
         // </div>
-        <div className="">
+        
             <div className="col">
                 <div className="card h-100">
                     <img src={img} alt="" className="card-img-top"/>
                     <div class="card-body">
                         <h5 className="card-title">{name}</h5>
-                        <h4>Price: ${price}</h4>
+                        <h5>Price: ${price}</h5>
                     </div>
-                    <div className="card-footer">
-                        <button onClick={()=>props.addToCart(props.product)} className='btn-add-cart'>Add To cart</button>
+                    <div className="card-footer btn-add-cart">
+                        <button onClick={()=>props.addToCart(props.product)} className='btn'>Add To cart</button>
                     </div>
                 </div>
             </div>
-        </div>
     );
 };
 
