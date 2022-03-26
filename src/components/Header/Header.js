@@ -6,7 +6,7 @@ const Header = () => {
         <nav className='container-fluid header-nav'>
             <div className="header-nav container d-flex justify-content-between align-items-center">
                 <div className='logo align-items-center d-flex'>
-                    <h2>CHOOSE FOR HOME DECOR</h2>   
+                    <h2>HOME DECOR</h2>   
                 </div>
                 <div className='header-menu'>
                     <a href="/order">Order</a>

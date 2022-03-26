@@ -41,6 +41,7 @@ const Shop = () => {
         <div className="container-fluid mt-3">
             <div className="row mx-auto d-flex">
             <div className='col-sm-9'>
+            <h5 className='py-3 text-uppercase'>Choose 4 Gadgets for decorating Your home.</h5>
                 <div className='row row-cols-1 row-cols-md-3 g-4'>
                     {
                         products.map(product=> <Product key={product.id} product ={product} addToCart ={addToCart}></Product>)

@@ -6,7 +6,7 @@ const Cart = ({cart, selectOne, removeCart}) => {
 
     return (
         <div className='order-summary '>
-            <h3 className='py-3'>Selected Items</h3>
+            <h5 className='pt-5 text-uppercase'>Selected Items</h5>
 
             {
                 cart && cart.map(item => (

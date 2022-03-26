@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsFillCartPlusFill } from 'react-icons/bs';
 import './Product.css'
 
 const Product = (props) => {
@@ -13,7 +14,7 @@ const Product = (props) => {
                         <h5>Price: ${price}</h5>
                     </div>
                     <div className="card-footer btn-add-cart">
-                        <button onClick={()=>props.addToCart(props.product)} className='btn'>Add To cart</button>
+                        <button onClick={()=>props.addToCart(props.product)} className='btn'>Add To cart <BsFillCartPlusFill/></button>
                     </div>
                 </div>
             </div>
