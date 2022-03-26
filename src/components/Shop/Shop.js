@@ -23,7 +23,7 @@ const Shop = () => {
      } 
  
     return (
-        <div className="container mt-3">
+        <div className="container-fluid mt-3">
             <div className="row mx-auto d-flex">
             <div className='col-sm-9'>
                 <div className='row row-cols-1 row-cols-md-3 g-4'>
