@@ -3,20 +3,21 @@ import './Cart.css'
 
 const Cart = (props) => {
     const {cart} = props;
-    let image
-    let name 
-    for(const product of cart){
-         image = product.img
-         name = product.name
-    }
 
     return (
         <div className='order-summary '>
-            <h2>Order Summery</h2>
-            <div className='d-flex align-items-center justify-content-between'>
-                <img src={image} alt="" />
-                <p>{name}</p>
-            </div>
+            <h3 className='py-3'>Selected Items</h3>
+
+            {
+                cart.map((item) => (
+          
+                    <div className='d-flex align-items-center justify-content-around mt-3'>
+                        <img src={item.img} alt="" />
+                        <p>{item.name}</p>
+                    </div>
+            ))}
+            <button className='btn btn-outline-secondary my-3'>CHOOSE FOR 1</button>
+            <button onClick={()=>props.removeCart(props.product)} className='btn btn-outline-secondary'>CHOOSE AGAIN</button>
         </div>
     );
 };

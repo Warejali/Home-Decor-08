@@ -17,19 +17,23 @@ const Shop = () => {
         const newCart = [...cart, product];
         setCart(newCart)
      } 
+    const removeCart =(product) => {
+        const newRemoveCart = [];
+        setCart(newRemoveCart)
+     } 
  
     return (
         <div className="container mt-3">
             <div className="row mx-auto d-flex">
-            <div className='col-9'>
+            <div className='col-sm-9'>
                 <div className='row row-cols-1 row-cols-md-3 g-4'>
                     {
                         products.map(product=> <Product product ={product} addToCart ={addToCart}></Product>)
                     }
                 </div>
             </div>    
-            <div className='col-3 cart-section'>
-            <Cart cart ={cart}></Cart>
+            <div className='col-sm-3 cart-section'>
+                <Cart cart ={cart} removeCart = {removeCart}></Cart>
             </div>
         </div>
         </div>
