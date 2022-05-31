@@ -49,7 +49,7 @@ const Shop = () => {
                 </div>
             </div>    
             <div className='col-sm-3 cart-section'>
-                <Cart key={cart.id} cart ={cart} removeCart={removeCart} selectOne={selectOne}></Cart>
+                <Cart cart ={cart} removeCart={removeCart} selectOne={selectOne}></Cart>
             </div>
         </div>
         </div>
